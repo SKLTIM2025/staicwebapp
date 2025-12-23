@@ -27,9 +27,9 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_TREE_07C0B300F }}
           action: "upload"
           # Your HTML is at the repo root
-          app_location: "/"          "SKLTIM2025/staticwebapp"
-          api_location: ""           # No API
-          output_location: "/"       # No build; serve directly from root
+          app_location: "/"          
+          #api_location: ""           
+          #output_location: "/"       
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
